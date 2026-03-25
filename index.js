@@ -95,6 +95,10 @@ app.delete('/users/:id', (req, res) => {
     res.json(deleted[0]);
 });
 
+app.get('/', (req, res) => {
+    res.send('User Management API is running');
+});
+
 /* SERVER */
 const PORT = process.env.PORT || 3000;
 
